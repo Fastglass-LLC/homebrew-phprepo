@@ -20,5 +20,4 @@ class DrushLauncher < AbstractPhpPhar
     system "#{bin}/drush", "--drush-launcher-version"
   end
 
-  conflicts_with "drush", :because => "because both provide a 'drush' executable"
 end
