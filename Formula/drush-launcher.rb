@@ -3,8 +3,8 @@ require File.expand_path("../../Abstract/abstract-php-phar", __FILE__)
 class DrushLauncher < AbstractPhpPhar
   desc "A small wrapper around Drush for your global $PATH."
   homepage "https://github.com/drush-ops/drush-launcher"
-  url "https://github.com/drush-ops/drush-launcher/releases/download/0.5.0/drush.phar"
-  sha256 "ef8556bad7162a59a14e688e154e5b1564702c6a341522b06a1339b7d395cd18"
+  url "https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar"
+  sha256 "c3f32a800a2f18470b0010cd71c49e49ef5c087f8131eecfe9b686dc1f3f3d4e"
 
   bottle :unneeded
 
