@@ -7,13 +7,7 @@ class Php71Memcached < AbstractPhp71Extension
   url "https://github.com/php-memcached-dev/php-memcached/archive/v3.0.3.tar.gz"
   sha256 "9041ab502740678a2db158c152467b039e3e4d5c6b207939c2955c75fd345c96"
   head "https://github.com/php-memcached-dev/php-memcached.git"
-  revision 3
-
-  bottle do
-    sha256 "3dabb4cf7d032a837430bb149422b65eed0c16c49f1b5c2b1487f43b955c89c5" => :high_sierra
-    sha256 "ab87786ea85942b3b78c84f23321e2e298ac65386326eaac4ae13e9674d3dcc0" => :sierra
-    sha256 "462cded5bc704c1432c085543c6b53d8e444cf64b7331bd7dfc4c2c79f6b85ab" => :el_capitan
-  end
+  revision 4
 
   option "with-sasl", "Build with sasl support"
 

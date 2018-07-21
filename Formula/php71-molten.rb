@@ -7,14 +7,8 @@ class Php71Molten < AbstractPhp71Extension
   url "https://github.com/chuan-yun/Molten/archive/v0.1.1.tar.gz"
   sha256 "9502d915c406326ce16fc2bc428a04188c7d03da2fc95772baed0c6e284f1397"
   head "https://github.com/chuan-yun/Molten.git"
-  revision 2
+  revision 3
 
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "a636885f775fca5aa10a0f904031e753ecd0354b6073072a844171165454a95f" => :high_sierra
-    sha256 "99566ad780275d3a001f6b4cdab77e3c9ed4e762ad73593473c2acb3bd6e12e5" => :sierra
-    sha256 "5d0235c2e21bd86b8723a7155135263738ce4031a9c866c3dc9160dc912389f4" => :el_capitan
-  end
 
   option "without-zipkin", "Disable zipkin headers"
 
