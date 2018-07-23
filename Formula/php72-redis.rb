@@ -4,8 +4,8 @@ class Php72Redis < AbstractPhp72Extension
   init
   desc "PHP extension for Redis"
   homepage "https://github.com/phpredis/phpredis"
-  url "https://github.com/phpredis/phpredis/archive/3.1.4.tar.gz"
-  sha256 "656cab2eb93bd30f30701c1280707c60e5736c5420212d5d547ebe0d3f4baf71"
+  url "https://github.com/phpredis/phpredis/archive/4.1.0.tar.gz"
+  sha256 "daaabc8611a7b90abf177b9e59235898cdc4cbbb7ec04302681f4c8e316488c5"
   head "https://github.com/phpredis/phpredis.git"
 
 
