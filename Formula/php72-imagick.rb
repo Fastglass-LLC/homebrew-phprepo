@@ -4,8 +4,8 @@ class Php72Imagick < AbstractPhp72Extension
   init
   desc "Provides a wrapper to the ImageMagick library."
   homepage "https://pecl.php.net/package/imagick"
-  url "https://github.com/mkoppanen/imagick/archive/master.tar.gz"
-  sha256 "7f60e45cbfdf75bbe27005822098c8a1a0c962bbc0a437e213cd6dc92cbe1436"
+  url "https://pecl.php.net/get/imagick-3.4.3.tgz"
+  sha256 "1f3c5b5eeaa02800ad22f506cd100e8889a66b2ec937e192eaaa30d74562567c"
   head "https://github.com/mkoppanen/imagick.git"
   revision 3
 
