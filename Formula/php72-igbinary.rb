@@ -12,6 +12,7 @@ class Php72Igbinary < AbstractPhp72Extension
   depends_on "igbinary" => :build
 
   def install
+    Dir.chdir "igbinary-#{version}" unless build.head?
     safe_phpize
     system "./configure", "--prefix=#{prefix}", phpconfig
     system "make"
