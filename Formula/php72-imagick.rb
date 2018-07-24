@@ -18,6 +18,7 @@ class Php72Imagick < AbstractPhp72Extension
 
     safe_phpize
     system "./configure", "--prefix=#{prefix}",
+           "CFLAGS=' -arch x86_64'",
                           phpconfig,
                           "--with-imagick=#{Formula["imagemagick"].opt_prefix}"
     system "make"
