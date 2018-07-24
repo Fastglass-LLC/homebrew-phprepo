@@ -14,7 +14,6 @@ class Php72Imagick < AbstractPhp72Extension
   depends_on "imagemagick"
 
   def install
-    ENV['CFLAGS']=ENV['CXXFLAGS']="-arch x86_64"
     Dir.chdir "imagick-#{version}" unless build.head?
 
     safe_phpize
