@@ -17,10 +17,10 @@ class Php72Imagick < AbstractPhp72Extension
     Dir.chdir "imagick-#{version}" unless build.head?
 
     safe_phpize
-    system "./configure", "--prefix=#{prefix}",
-           "CFLAGS=' -arch x86_64'",
-                          phpconfig,
-                          "--with-imagick=#{Formula["imagemagick"].opt_prefix}"
+    system "./configure", "CFLAGS='-arch x86_64'",
+           "--prefix=#{prefix}",
+           phpconfig,
+           "--with-imagick=#{Formula["imagemagick"].opt_prefix}"
     system "make"
     prefix.install "modules/imagick.so"
     write_config_file if build.with? "config-file"
