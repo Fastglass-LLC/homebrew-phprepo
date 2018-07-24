@@ -4,7 +4,7 @@ class Php72Igbinary < AbstractPhp72Extension
   init
   desc "Igbinary is a replacement for the standard php serializer."
   homepage "https://pecl.php.net/package/igbinary"
-  url "https://github.com/igbinary/igbinary/releases/download/2.0.7/igbinary-2.0.7.tgz"
+  url "https://pecl.php.net/get/igbinary-2.0.7.tgz"
   sha256 "0cddce91bd0f3a57dfef08f5f99058a5be086878bc28aaa3be047bf10a10f801"
   head "https://github.com/igbinary/igbinary.git"
 
@@ -13,8 +13,7 @@ class Php72Igbinary < AbstractPhp72Extension
 
   def install
     safe_phpize
-    system "./configure", "--prefix=#{prefix}",
-                          phpconfig
+    system "./configure", "--prefix=#{prefix}", phpconfig
     system "make"
     prefix.install "modules/igbinary.so"
     write_config_file if build.with? "config-file"
