@@ -4,8 +4,8 @@ class Php72Mustache < AbstractPhp72Extension
   init
   desc "Mustache PHP Extension"
   homepage "https://github.com/jbboehr/php-mustache#mustache"
-  url "https://github.com/jbboehr/php-mustache/archive/v0.7.2.tar.gz"
-  sha256 "5eb0a25d42532db98e2e9087e49db060369651b16ac1accd61415424a47561f7"
+  url "https://github.com/jbboehr/php-mustache/archive/v0.7.3.tar.gz"
+  sha256 "69a6cbe5ae472c0fb1db8979fe0784caeb9d9baace3e13aaa7ab68f0a34dd83e"
   head "https://github.com/jbboehr/php-mustache.git"
 
 
