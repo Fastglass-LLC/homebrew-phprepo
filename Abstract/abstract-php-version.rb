@@ -13,7 +13,7 @@ class AbstractPhpVersion < Formula
     PHP_BRANCH      = "PHP-7.1".freeze
 
     PHP_CHECKSUM    = {
-      :sha256 => " 580e375515ede831a6d82e13c0ec25dd08b225c6d87dfc24d7cd5f3bd542bf8e",
+      :sha256 => "c2409c574bde23763b48a96b93922f530156df044585ff60108bce7b27b19580",
     }.freeze
   end
 
@@ -24,7 +24,7 @@ class AbstractPhpVersion < Formula
     PHP_BRANCH      = "PHP-7.2".freeze
 
     PHP_CHECKSUM    = {
-      :sha256 => "1f8068f520a60fff3db19be1b849f0c02a33a0fd8b34b7ae05556ef682187ee6",
+      :sha256 => "e9e3aaa6c317b7fea78246a758b017544366049d2789ad5a44fe9398464c53a8",
     }.freeze
   end
 end
