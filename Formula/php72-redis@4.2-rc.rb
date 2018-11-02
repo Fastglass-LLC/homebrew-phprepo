@@ -4,8 +4,8 @@ class Php72RedisAT42rc < AbstractPhp72Extension
   init
   desc "PHP extension for Redis Release Candidate 4.2"
   homepage "https://github.com/phpredis/phpredis"
-  url "http://pecl.php.net/get/redis/4.2.0RC1"
-  sha256 "ee07c2b5c0721b14aa8dee5488c3b1414a1ebbc410e0869af913b80ac02d5178"
+  url "https://pecl.php.net/get/redis-4.2.0RC2.tgz"
+  sha256 "1ef37102d688b3df9545c7ab7a0f14007852885eabbaca5abe7133cfb876d1b5"
   head "https://github.com/phpredis/phpredis.git"
 
 
