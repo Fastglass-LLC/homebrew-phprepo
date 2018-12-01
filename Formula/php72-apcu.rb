@@ -33,7 +33,6 @@ class Php72Apcu < AbstractPhp72Extension
       "apc_cache_api.h",
       "apc_lock_api.h",
       "apc_sma.h",
-      "apc_pool_api.h",
       "apc_sma_api.h",
       "apc_arginfo.h",
       "apc_iterator.h",
