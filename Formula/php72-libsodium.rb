@@ -1,11 +1,11 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php71Libsodium < AbstractPhp72Extension
+class Php72Libsodium < AbstractPhp72Extension
   init
   desc "Modern and easy-to-use crypto library"
   homepage "https://github.com/jedisct1/libsodium-php"
-  url "http://pecl.php.net/get/libsodium/2.0.13"
-  sha256 "be5fad6bfe309dccc109c5cec2e748157fd4d8da04c4de10971845c405ba703d"
+  url "https://pecl.php.net/get/libsodium-2.0.17.tgz"
+  sha256 "29e99b24c4de80c800447f5d5e69352bfec7b11f9fa44fe11aa108f0060f74f0"
   head "https://github.com/jedisct1/libsodium-php.git"
 
 

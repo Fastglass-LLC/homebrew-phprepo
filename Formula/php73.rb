@@ -13,10 +13,10 @@ class Php73 < AbstractPhp
   head PHP_GITHUB_URL, :branch => PHP_BRANCH
 
   def php_version
-    "7.2"
+    "7.3"
   end
 
   def php_version_path
-    "72"
+    "73"
   end
 end
