@@ -22,21 +22,6 @@ class Php72Apcu < AbstractPhp72Extension
                           phpconfig,
                           *args
     system "make"
-    # Keep all the headers that are needed to build php-apc-bc
-    include.install [
-      "php_apc.h",
-      "apc.h",
-      "apc_globals.h",
-      "apc_cache.h",
-      "apc_stack.h",
-      "apc_lock.h",
-      "apc_cache_api.h",
-      "apc_lock_api.h",
-      "apc_sma.h",
-      "apc_sma_api.h",
-      "apc_arginfo.h",
-      "apc_iterator.h",
-    ]
     prefix.install "modules/apcu.so"
     write_config_file if build.with? "config-file"
   end
