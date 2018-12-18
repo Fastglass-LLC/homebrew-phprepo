@@ -13,6 +13,7 @@ class Php72Apcu < AbstractPhp72Extension
   depends_on "pcre"
 
   def install
+    Dir.chdir "apcu-#{version}" unless build.head?
     args = []
     args << "--enable-apcu"
 
