@@ -4,8 +4,8 @@ class Php72Lzf < AbstractPhp72Extension
   init
   desc "handles LZF de/compression"
   homepage "https://pecl.php.net/package/lzf"
-  url "https://pecl.php.net/get/LZF-1.6.5.tgz"
-  sha256 "dd116d12a3be985f42256650ce9a033fd3c4e8da4f2280c79fb9fd6a73199a4c"
+  url "https://pecl.php.net/get/LZF-1.6.7.tgz"
+  sha256 "48178da24401976f8ac518905222af64c033f49f2a50d830e55de13fa80e8fe0"
   head "https://github.com/php/pecl-file_formats-lzf.git"
   revision 1
 
