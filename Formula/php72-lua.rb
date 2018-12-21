@@ -4,8 +4,8 @@ class Php72Lua < AbstractPhp72Extension
   init
   desc "This extension embeds the lua interpreter.."
   homepage "https://pecl.php.net/package/lua"
-  url "https://pecl.php.net/get/lua-2.0.5.tgz"
-  sha256 "bb49431ce5494ebebba98d9c477537df97234e13d4bd46529809ca1a2b8c287e"
+  url "https://pecl.php.net/get/lua-2.0.6.tgz"
+  sha256 "6602c5d95936f4a024435a492d1bec9965fac1d85e27da72a73142d2b85e382f"
   head "https://github.com/laruence/php-lua.git"
 
 
