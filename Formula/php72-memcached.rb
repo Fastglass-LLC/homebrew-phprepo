@@ -4,8 +4,8 @@ class Php72Memcached < AbstractPhp72Extension
   init
   desc "Memcached via libmemcached library"
   homepage "https://pecl.php.net/package/memcached"
-  url "https://github.com/php-memcached-dev/php-memcached/archive/v3.0.4.tar.gz"
-  sha256 "4613a9dd4cf5baa7ac3535df63a8c2ae83492e8aa8a729805f8be36f520b138c"
+  url "https://pecl.php.net/get/memcached-3.1.0.tgz"
+  sha256 "06bd0ba7016d5a0a723e4288625f558542419b9c13eaa0afeeafb05b87de81ba"
   head "https://github.com/php-memcached-dev/php-memcached.git"
   revision 2
 
@@ -18,6 +18,7 @@ class Php72Memcached < AbstractPhp72Extension
   depends_on "libmemcached"
 
   def install
+    Dir.chdir "memcached-#{version}" unless build.head?
     args = []
     args << "--with-libmemcached-dir=#{Formula["libmemcached"].opt_prefix}"
     args << "--enable-memcached-igbinary"
