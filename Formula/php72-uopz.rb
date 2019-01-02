@@ -4,13 +4,14 @@ class Php72Uopz < AbstractPhp72Extension
   init
   desc "Exposes Zend Engine functionality."
   homepage "http://php.net/manual/en/book.uopz.php"
-  url "https://github.com/krakjoe/uopz/archive/v5.0.2.tar.gz"
-  sha256 "919f6d7873db89a2032e0145a8e7a355d111f9ab2651aa3fa78b636277034dab"
+  url "https://pecl.php.net/get/uopz-5.1.0.tgz"
+  sha256 "6191cc263fd087d9c29d4a02f9a00f286670954a899ae1fdb2db25c2c717a25a"
   head "https://github.com/krakjoe/uopz.git"
 
 
   def install
     safe_phpize
+    Dir.chdir "uopz-#{version}" unless build.head?
     system "./configure", "--prefix=#{prefix}",
                           phpconfig
     system "make"
