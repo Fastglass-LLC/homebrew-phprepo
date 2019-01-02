@@ -10,6 +10,7 @@ class Php72Swoole < AbstractPhp72Extension
 
 
   def install
+    Dir.chdir "swoole-#{version}" unless build.head?
     safe_phpize
     system "./configure", "--prefix=#{prefix}", "--enable-coroutine", phpconfig
     system "make"
