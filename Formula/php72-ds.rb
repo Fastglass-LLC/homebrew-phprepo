@@ -4,8 +4,8 @@ class Php72Ds < AbstractPhp72Extension
   init
   desc "Data Structures for PHP"
   homepage "https://github.com/php-ds/extension"
-  url "https://pecl.php.net/get/ds-1.2.7.tgz"
-  sha256 "607a52d694eb6484086b0782e759df340363338ac2646966aac32d263a4ee81c"
+  url "https://pecl.php.net/get/ds-1.2.8.tgz"
+  sha256 "55039a72e155503d71cd46a0ebdef39aa67132d8a35e8bd8945b23a0b9776d7f"
   head "https://github.com/php-ds/extension.git"
 
   def install
