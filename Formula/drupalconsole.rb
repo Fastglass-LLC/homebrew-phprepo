@@ -4,15 +4,8 @@ class Drupalconsole < AbstractPhpPhar
   init
   desc "CLI tool for Drupal 8"
   homepage "https://drupalconsole.com/"
-  url "https://github.com/hechoendrupal/drupal-console-launcher/releases/download/1.6.1/drupal.phar"
-  sha256 "e3d044988bf96f6062a28f6457f37cfa00ab35461af4c597e936471f202e0194"
-
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "8a3f182521a3715dd21d8b59f00b7fb4edd60265ade6791915b09f778380b758" => :high_sierra
-    sha256 "8a3f182521a3715dd21d8b59f00b7fb4edd60265ade6791915b09f778380b758" => :sierra
-    sha256 "8a3f182521a3715dd21d8b59f00b7fb4edd60265ade6791915b09f778380b758" => :el_capitan
-  end
+  url "https://github.com/hechoendrupal/drupal-console-launcher/releases/download/1.8.0/drupal.phar"
+  sha256 "1c9bef3d3e4f70633d5004e3a3d86d90630df7cf97dab46d0175855796f934da"
 
   def install
     bin.install "drupal.phar" => "drupal"
