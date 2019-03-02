@@ -2,10 +2,17 @@
 
 A centralized repository for PHP-related brews.
 
+This is a fork of the original Homebrew PHP repository that was depreciated by the Homebrew project. PHP
+modules must now be installed with PECL or compiling from source. This repo is being maintained because it allows
+you to install PHP modules as a package which some people prefer and was the motivation for maintaining this
+fork.
+
+Contributions are always welcome, we attempt to keep everything up-to-date as much as possible.
+
 ## Requirements
 
 * [Homebrew](https://github.com/Homebrew/brew)
-* El Capitan, Sierra or High Sierra. Untested everywhere else.
+* High Sierra or Mojave. Untested everywhere else.
 
 ## Installation
 
