@@ -4,8 +4,8 @@ class Php72Uv < AbstractPhp72Extension
   init
   desc "interface to libuv library"
   homepage "https://github.com/bwoebi/php-uv"
-  url "https://github.com/bwoebi/php-uv/archive/v0.1.1.tar.gz"
-  sha256 "e576df44997a0b656deb4a1c2bfd1879fb3647419b0724bd6e87c7ddf997e2c1"
+  url "https://pecl.php.net/get/uv-0.2.4.tgz"
+  sha256 "5ad5906c864ab2f9d856bc0920ca992531a9dd6c4c21189715ecf803821c31b2"
   head "https://github.com/bwoebi/php-uv.git"
   revision 1
 
@@ -13,6 +13,7 @@ class Php72Uv < AbstractPhp72Extension
   depends_on "libuv"
 
   def install
+    Dir.chdir "uv-#{version}" unless build.head?
     safe_phpize
     system "./configure", "--prefix=#{prefix}",
                           phpconfig,
