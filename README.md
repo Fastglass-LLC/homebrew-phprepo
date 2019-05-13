@@ -44,6 +44,7 @@ Bugs inevitably happen - none of us are running EVERY conceivable setup - but ho
 - If you upgraded to High Sierra `10.13.x`, please also upgrade to the latest Xcode, 9.1.
 - File an awesome bug report, using the information in the next section.
 - If you have a failing install due to `GD build test failed`, try running the following before attempting to reinstall:
+- Mojave; XCode no longer installs needed headers, run `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
 
 ```sh
 brew rm freetype jpeg libpng gd zlib
@@ -68,7 +69,7 @@ An example of the best practice(s) for filling out bug reports can be seen here:
 
 Please include the following information in your bug report:
 
-- macOS Version: eg. 10.13.1, 10.12.3
+- macOS Version: eg. 10.13.1, 10.14.4
 - Homebrew Version: `brew -v`
 - PHP Version in use: stock-apple, homebrew-php stable, homebrew-php devel, homebrew-php head, custom
 - Xcode Version: 9.1, 9.0, 8.1, 7 etc.
@@ -99,13 +100,13 @@ The purpose of this repository is to allow PHP developers to quickly retrieve wo
 **Note:** For a list of available configuration options run:
 
 ```sh
-$ brew options php71
+$ brew options php72
 ```
 
-Once the tap is installed, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, or any formulae you might need via:
+Once the tap is installed, you can install `php71`, `php72`, `php73` or any formulae you might need via:
 
 ```sh
-$ brew install php71
+$ brew install php72
 ```
 
 That's it!
@@ -118,30 +119,14 @@ Using multiple PHP versions from `homebrew-php` is pretty straightforward.
 
 If using Apache, you will need to update the `LoadModule` call. For convenience, simply comment out the old PHP version:
 
-```
-# /etc/apache2/httpd.conf
-# Swapping from PHP 5.5 to PHP 7.1
-# $HOMEBREW_PREFIX is normally `/usr/local`
-# LoadModule php5_module    $HOMEBREW_PREFIX/Cellar/php55/5.5.18/libexec/apache2/libphp5.so
-LoadModule php7_module    $HOMEBREW_PREFIX/Cellar/php71/7.1.11/libexec/apache2/libphp7.so
-```
-
 If using FPM, you will need to unload the `plist` controlling php, or manually stop the daemon, via your command line:
-
-```sh
-# Swapping from PHP 5.5 to PHP 7.1
-# $HOMEBREW_PREFIX is normally `/usr/local`
-$ cp $HOMEBREW_PREFIX/Cellar/php71/7.1.11/homebrew.mxcl.php71.plist ~/Library/LaunchAgents/
-$ launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php55.plist
-$ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php71.plist
-```
 
 If you would like to swap the PHP you use on the command line, you should update the `$PATH` variable in either your `.profile`, `.zshrc`, `.bashrc` or `.bash_profile`:
 
 ```
-# Swapping from PHP 7.0 to PHP 7.1
-# export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+# Swapping from PHP 7.1 to PHP 7.2
+# export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php72)/bin:$PATH"
 ```
 
 Please be aware that you must make this type of change EACH time you swap between PHP `minor` versions. You will typically only need to update the Apache/FPM when upgrading your PHP `patch` version.
@@ -159,12 +144,12 @@ $ pear install PHP_CodeSniffer
 It would be nice to be able to use the `phpcs` command via command-line, or other utilities. You will need to add the installed php's `bin` directory to your path. The following would be added to your `.bashrc` or `.bash_profile` when running the `php71` brew:
 
 ```sh
-export PATH="$(brew --prefix php71)/bin:$PATH"
+export PATH="$(brew --prefix php72)/bin:$PATH"
 ```
 
 Some caveats:
 
-- Remember to use the proper PHP version in that export. So if you installed the `php70` formula, use `php70` instead of `php71` in the export.
+- Remember to use the proper PHP version in that export. So if you installed the `php72` formula, use `php72` instead of `php71` in the export.
 - Updating your installed PHP will result in the binaries no longer existing within your path. In such cases, you will need to reinstall the pear extensions. Alternatives include installing `pear` outside of `homebrew-php` or using the `homebrew-php` version of your extension.
 - Uninstalling your `homebrew-php` PHP formula will also remove the extensions.
 
@@ -175,7 +160,6 @@ See [Contributing](CONTRIBUTING.md)
 ## Todo
 
 - [x] Proper PHP Versioning? See issue [#8](https://github.com/homebrew/homebrew-php/issues/8)
-- [x] Pull out all PHP-related brews from Homebrew
 
 ## License
 
