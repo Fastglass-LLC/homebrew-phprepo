@@ -9,6 +9,9 @@ fork.
 
 Contributions are always welcome, we attempt to keep everything up-to-date as much as possible.
 
+## Notice
+PHP 7.1 is not being maintained and the formulas will be deleted.
+
 ## Requirements
 
 * [Homebrew](https://github.com/Homebrew/brew)
