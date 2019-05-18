@@ -5,18 +5,6 @@ class AbstractPhpVersion < Formula
       :sha256 => "feab6e29ef9a490aa53332fe014e8026d89d970acc5105f37330b2f31e711bbd",
     }.freeze
   end
-
-  module Php71Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.1.29.tar.bz2/from/this/mirror".freeze
-    PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
-    PHP_VERSION     = "7.1.29".freeze
-    PHP_BRANCH      = "PHP-7.1".freeze
-
-    PHP_CHECKSUM    = {
-      :sha256 => "8528d17efe82662dc740d96ddb32217f4e161a597d709f19571b0c82fbb88335",
-    }.freeze
-  end
-
   module Php72Defs
     PHP_SRC_TARBALL = "https://php.net/get/php-7.2.18.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
