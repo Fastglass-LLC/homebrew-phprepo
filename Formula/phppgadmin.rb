@@ -3,8 +3,8 @@ require File.expand_path("../../Requirements/php-meta-requirement", __FILE__)
 class Phppgadmin < Formula
   desc "Web-based administration tool for PostgreSQL"
   homepage "http://phppgadmin.sourceforge.net/"
-  url "https://downloads.sourceforge.net/project/phppgadmin/phpPgAdmin%20%5Bstable%5D/phpPgAdmin-5.1/phpPgAdmin-5.1.tar.gz"
-  sha256 "42294e7b19d3b4003912eaad9a34df4096c0380871aedce152aa13d4955878a5"
+  url "https://github.com/phppgadmin/phppgadmin/archive/REL_5-6-0.tar.gz"
+  sha256 "6b6a31786533383cdbde9adf829a9cc8b4ec32afbce4a4abdbd57d9c5c564fbb"
 
   depends_on PhpMetaRequirement
 
