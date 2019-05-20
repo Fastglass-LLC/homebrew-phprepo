@@ -15,8 +15,8 @@ class XdebugOsx < Formula
   end
 
   depends_on PhpMetaRequirement
-  depends_on "php71-xdebug" if Formula["php71"].linked_keg.exist?
   depends_on "php72-xdebug" if Formula["php72"].linked_keg.exist?
+  depends_on "php73-xdebug" if Formula["php73"].linked_keg.exist?
 
   def install
     bin.install "xdebug-toggle"
