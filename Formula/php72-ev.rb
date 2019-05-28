@@ -4,8 +4,8 @@ class Php72Ev < AbstractPhp72Extension
   init
   desc "interface to libev library"
   homepage "https://pecl.php.net/package/ev"
-  url "https://pecl.php.net/get/ev-1.0.3.tgz"
-  sha256 "3c03fde9e72745e6ce6c32d680218389e0f4310908187f1529b7f227b295aeee"
+  url "https://pecl.php.net/get/ev-1.0.6.tgz"
+  sha256 "104b88c40cc708fd418882166722408c2e429331a2633ef5fa296f497995e2cf"
   head "https://bitbucket.org/osmanov/pecl-ev.git"
 
 
