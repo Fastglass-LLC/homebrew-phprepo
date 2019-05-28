@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php72Zip < AbstractPhp72Extension
+class Php72Zip < AbstractPhp73Extension
   init
   desc "A zip management extension"
   homepage "https://pecl.php.net/package/zip"
