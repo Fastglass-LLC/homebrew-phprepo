@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php72Uopz < AbstractPhp72Extension
+class Php73Uopz < AbstractPhp73Extension
   init
   desc "Exposes Zend Engine functionality."
   homepage "http://php.net/manual/en/book.uopz.php"
