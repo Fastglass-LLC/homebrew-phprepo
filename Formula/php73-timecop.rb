@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php72Timecop < AbstractPhp73Extension
+class Php73Timecop < AbstractPhp73Extension
   init
   desc "timecop is providing \"time travel\" capabilities."
   homepage "https://github.com/hnw/php-timecop"

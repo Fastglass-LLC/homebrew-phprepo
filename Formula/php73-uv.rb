@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php72Uv < AbstractPhp73Extension
+class Php73Uv < AbstractPhp73Extension
   init
   desc "interface to libuv library"
   homepage "https://github.com/bwoebi/php-uv"

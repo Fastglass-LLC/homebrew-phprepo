@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php72Swoole < AbstractPhp73Extension
+class Php73Swoole < AbstractPhp73Extension
   init
   desc "Event-driven asynchronous & concurrent networking engine for PHP."
   homepage "https://pecl.php.net/package/swoole"
