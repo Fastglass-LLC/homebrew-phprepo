@@ -4,8 +4,8 @@ class Php72Couchbase < AbstractPhp72Extension
   init
   desc "Provides fast access to documents stored in a Couchbase Server."
   homepage "https://developer.couchbase.com/documentation/server/current/sdk/php/start-using-sdk.html"
-  url "https://pecl.php.net/get/couchbase-2.4.3.tgz"
-  sha256 "98c0d7acf6dd1b3930c25f8902decc98a334891736e460124557065e720d7a96"
+  url "https://pecl.php.net/get/couchbase-2.6.1.tgz"
+  sha256 "e977a08f4b6b75eb7a903e76c069ad3a12f19a7ea1b0c4da8b04c1c3cc7a5743"
   head "https://github.com/couchbase/php-couchbase.git"
 
 
