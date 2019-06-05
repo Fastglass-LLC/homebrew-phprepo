@@ -4,9 +4,9 @@ class Php72Hprose < AbstractPhp72Extension
   init
   desc "High Performance Remote Object Service Engine"
   homepage "https://pecl.php.net/package/hprose"
-  url "https://pecl.php.net/get/hprose-1.6.6.tgz"
+  url "https://pecl.php.net/get/hprose-1.6.7.tgz"
   head "https://github.com/hprose/hprose-pecl.git"
-  sha256 "29292d9ba15c3f838622bbf8f608a0fb4fb6bba6019f6e6bffe1eedb572881b8"
+  sha256 "154a78155f55279235ca3b4a54cb7f07073420d9d23b1be34f3070f7b508eae8"
 
 
   def install
