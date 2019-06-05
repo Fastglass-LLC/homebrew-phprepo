@@ -4,8 +4,8 @@ class Php72Event < AbstractPhp72Extension
   init
   desc "Provides interface to libevent library"
   homepage "https://pecl.php.net/package/event"
-  url "https://pecl.php.net/get/event-2.5.1.tgz"
-  sha256 "4d4538eb5ac7cca1f18f8b395a7f825e1b67f62b860d8623958ea44417addb42"
+  url "https://pecl.php.net/get/event-2.5.2.tgz"
+  sha256 "8edd69354177351a910b2855f112e2914a83e56cc2e2cb5ed03f33e73d5f3f2d"
   head "https://bitbucket.org/osmanov/pecl-event.git"
   revision 1
 
