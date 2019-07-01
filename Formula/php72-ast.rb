@@ -4,8 +4,8 @@ class Php72Ast < AbstractPhp72Extension
   init
   desc "Exposing PHP 7 abstract syntax tree"
   homepage "https://github.com/nikic/php-ast"
-  url "https://pecl.php.net/get/ast-1.0.1.tgz"
-  sha256 "38a2c7819d52a50e177ca817557113fa3419e13c6c269fee8690f74ac5244749"
+  url "https://pecl.php.net/get/ast-1.0.2.tgz"
+  sha256 "14cf2484fd8e3e7f70f6db27b2dde39b83cbd949637a99144136b9ed7eba833d"
   head "https://github.com/nikic/php-ast.git"
   revision 1
 
