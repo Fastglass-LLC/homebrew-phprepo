@@ -4,8 +4,8 @@ class Php72Solr < AbstractPhp72Extension
   init
   desc "Fast and lightweight library to communicate with Apache Solr servers"
   homepage "https://pecl.php.net/package/solr"
-  url "https://pecl.php.net/get/solr-2.4.0.tgz"
-  sha256 "22865dafb76fc5839e84a5bd423bb37d5062883e5dfc4d064b43129ac9f2752c"
+  url "https://pecl.php.net/get/solr-2.5.0.tgz"
+  sha256 "f34c6159515bf229a6f72aab374c40d8dfc9c51d74f0d11fe30a611cbdb5c546"
   head "https://git.php.net/repository/pecl/search_engine/solr.git"
 
   def install
