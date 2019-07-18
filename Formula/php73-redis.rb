@@ -4,7 +4,7 @@ class Php73Redis < AbstractPhp73Extension
   init
   desc "PHP extension for Redis"
   homepage "https://github.com/phpredis/phpredis"
-  url "https://github.com/phpredis/phpredis/archive/5.0.1.tar.gz"
+  url "https://pecl.php.net/get/redis-5.0.1.tgz"
   sha256 "6921d6461629e323822bacc91a0906b903cb61f12877a2ee320dd28ddca3c65f"
   head "https://github.com/phpredis/phpredis.git"
 
@@ -15,6 +15,7 @@ class Php73Redis < AbstractPhp73Extension
   def install
     args = []
     args << "--enable-redis-igbinary"
+    Dir.chdir "redis-#{version}" unless build.head?
 
     safe_phpize
 
