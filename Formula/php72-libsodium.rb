@@ -4,8 +4,8 @@ class Php72Libsodium < AbstractPhp72Extension
   init
   desc "Modern and easy-to-use crypto library"
   homepage "https://github.com/jedisct1/libsodium-php"
-  url "https://pecl.php.net/get/libsodium-2.0.21.tgz"
-  sha256 "e4eb31d7541b98b73d90cbf1bf33bb7416890d3025990d528302bc7a502a1feb"
+  url "https://pecl.php.net/get/libsodium-2.0.22.tgz"
+  sha256 "c302a8b1527f2b0b08110122191c7363d28479291411c94494619bc313c33b95"
   head "https://github.com/jedisct1/libsodium-php.git"
 
 
