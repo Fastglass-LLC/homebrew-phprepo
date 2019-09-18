@@ -4,8 +4,8 @@ class Php73Uopz < AbstractPhp73Extension
   init
   desc "Exposes Zend Engine functionality."
   homepage "http://php.net/manual/en/book.uopz.php"
-  url "https://pecl.php.net/get/uopz-6.1.0.tgz"
-  sha256 "09e983fe3dd24a9c48b11fea66ee4d0d9c5ba3ad9c7716c72d8fbeb7d30994a1"
+  url "https://pecl.php.net/get/uopz-6.1.1.tgz"
+  sha256 "29e8f50a4a6486ea6e9ba5bea706d1e75153e4d7052407ae27ca74c457b953e6"
   head "https://github.com/krakjoe/uopz.git"
 
 
