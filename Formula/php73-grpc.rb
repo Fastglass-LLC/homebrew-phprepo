@@ -4,8 +4,8 @@ class Php73Grpc < AbstractPhp73Extension
   init
   desc "The PHP extension for the gRPC library"
   homepage "https://grpc.io"
-  url "https://pecl.php.net/get/grpc-1.23.0.tgz"
-  sha256 "c7eb700d3800c1eb229dfa6befe142cd1eff518c2d76b3578d7910a2fcdc27eb"
+  url "https://pecl.php.net/get/grpc-1.23.1.tgz"
+  sha256 "2842f2000cf6b0688ebebd14bfc6be986fd0d7f7997f3f39345023b0fb3a0383"
 
   def install
     Dir.chdir "grpc-#{version}"
