@@ -4,8 +4,8 @@ class Php72Swoole < AbstractPhp72Extension
   init
   desc "Event-driven asynchronous & concurrent networking engine for PHP."
   homepage "https://pecl.php.net/package/swoole"
-  url "https://pecl.php.net/get/swoole-4.4.6.tgz"
-  sha256 "3e8835cc47867557fb4dbfc74522e3951bd15abb6100dd0ad81cf87634926fb9"
+  url "https://pecl.php.net/get/swoole-4.4.8.tgz"
+  sha256 "778fa0ee5e745c67b4532093d00f4fc4fb57dde49481aed23826110be92c1efb"
   head "https://github.com/swoole/swoole-src.git"
 
 
