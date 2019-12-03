@@ -4,8 +4,8 @@ class Php73Memcached < AbstractPhp73Extension
   init
   desc "Memcached via libmemcached library"
   homepage "https://pecl.php.net/package/memcached"
-  url "https://pecl.php.net/get/memcached-3.1.4.tgz"
-  sha256 "e91615b9c422676196062a0983b4abf54257e8b10a30dcf206d8b7a3ed142576"
+  url "https://pecl.php.net/get/memcached-3.1.5.tgz"
+  sha256 "b288e45f839593e16c4d8508b241de51a86df4f7322153e6becb9e1c819021fd"
   head "https://github.com/php-memcached-dev/php-memcached.git"
   revision 2
 
