@@ -4,8 +4,8 @@ class Php72Uploadprogress < AbstractPhp73Extension
   init
   desc "An extension to track progress of a file upload"
   homepage "https://github.com/php/pecl-php-uploadprogress"
-  url "https://pecl.php.net/get/uploadprogress-1.1.0.tgz"
-  sha256 "086ff9e52e8851f068254d5bf62e0128fc047c25ff2f6eff00ac89425ab81412"
+  url "https://pecl.php.net/get/uploadprogress-1.1.3.tgz"
+  sha256 "bcbf96631d257113ef7e85d21870d9b937bed9e00d68a6f1c0accab089af0e69"
   revision 1
 
   def install
