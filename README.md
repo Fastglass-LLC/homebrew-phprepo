@@ -22,7 +22,7 @@ PHP 7.1 is not being maintained and the formulas will be deleted.
 Run the following in your command-line:
 
 ```sh
-$ brew tap homebrew/homebrew-php
+$ brew tap Fastglass-LLC/homebrew-phprepo
 ```
 
 ## Bugs happen
