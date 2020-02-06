@@ -4,8 +4,8 @@ class Php73Oauth < AbstractPhp73Extension
   init
   desc "OAuth 1.0 consumer and provider"
   homepage "https://pecl.php.net/package/oauth"
-  url "https://pecl.php.net/get/oauth-2.0.2.tgz"
-  sha256 "87ce1a5d585f439f0ead2683f2f7dca76d538df9143da681978356b5e1c6e8e8"
+  url "https://pecl.php.net/get/oauth-2.0.5.tgz"
+  sha256 "c3fdd6ff8e6912832409beab58f2817ece83a6806c79f2f7b1707c98d595e0a7"
   head "https://github.com/php/pecl-web_services-oauth.git"
   revision 1
 
