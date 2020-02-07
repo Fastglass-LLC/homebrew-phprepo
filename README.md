@@ -56,6 +56,28 @@ brew install freetype jpeg libpng gd zlib
 
 Doing all of these might be a hassle, but will more than likely ensure you either have a working install or get help as soon as possible.
 
+## zlib Hell
+
+For Catalina (10.15) the compile headers are not installed in Xcode command line utilities. A threat that Apple has made
+good on. For 10.15, you must perform some trickery to get the headers available for commandline tools. Try the following:
+
+```export CPATH=`xcrun --show-sdk-path`/usr/include```
+
+For Mojave (10.14), if you are experiencing the problem with zlib not being found, what I found is Xcode has over-updated itself
+and you got to reset. Do the following
+
+```
+sudo rm -rf /Library/Developer/CommandLineTools
+xcode-select --install
+```
+After install go look for the headers installation package which will be in `/Library/Developer/CommandLineTools/Packages/`
+
+Then install the pkg file like so (substitute the correct pkg file):
+
+```
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+```
+
 ## Common upgrade issues
 
 If you have recently upgraded your macOS version or Xcode, you may have some compilation or missing libraries issues. The following information may help you solve most of the problems:
