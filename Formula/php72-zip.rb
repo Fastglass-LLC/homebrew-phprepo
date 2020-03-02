@@ -4,8 +4,8 @@ class Php72Zip < AbstractPhp72Extension
   init
   desc "A zip management extension"
   homepage "https://pecl.php.net/package/zip"
-  url "https://pecl.php.net/get/zip-1.17.1.tgz"
-  sha256 "74d8cdbb0045104d592cb3e41f0ca790520db168f34014a2c4bf227738381de6"
+  url "https://pecl.php.net/get/zip-1.17.2.tgz"
+  sha256 "6b411fb8a37c303833e23778375c8acfb7a0ce584b1c817f218e7bc1bb09c39e"
   revision 1
 
 
