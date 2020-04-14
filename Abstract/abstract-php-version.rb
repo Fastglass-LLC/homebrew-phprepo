@@ -6,7 +6,7 @@ class AbstractPhpVersion < Formula
     }.freeze
   end
   module Php72Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.2.27.tar.bz2/from/this/mirror".freeze
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.2.28.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
     PHP_VERSION     = "7.2.28".freeze
     PHP_BRANCH      = "PHP-7.2".freeze
@@ -16,7 +16,7 @@ class AbstractPhpVersion < Formula
     }.freeze
   end
   module Php73Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.3.14.tar.bz2/from/this/mirror".freeze
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.3.15.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
     PHP_VERSION     = "7.3.15".freeze
     PHP_BRANCH      = "PHP-7.3".freeze
