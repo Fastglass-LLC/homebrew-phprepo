@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php73Mustache < AbstractPhp73Extension
+class Php73MysqlndAzure < AbstractPhp73Extension
   init
   desc "MySQLnd redirection extension for Azure"
   homepage "https://github.com/microsoft/mysqlnd_azure"

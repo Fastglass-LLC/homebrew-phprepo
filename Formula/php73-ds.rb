@@ -1,6 +1,6 @@
 require File.expand_path("../../Abstract/abstract-php-extension", __FILE__)
 
-class Php72Ds < AbstractPhp73Extension
+class Php73Ds < AbstractPhp73Extension
   init
   desc "Data Structures for PHP"
   homepage "https://github.com/php-ds/extension"
