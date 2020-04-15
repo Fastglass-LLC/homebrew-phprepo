@@ -3,16 +3,9 @@ require File.expand_path("../../Requirements/php-meta-requirement", __FILE__)
 class Phpmyadmin < Formula
   desc "A web interface for MySQL and MariaDB"
   homepage "https://www.phpmyadmin.net"
-  url "https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-languages.tar.gz"
-  sha256 "ed55089538b7a652dd571e3d4336e0e8769990f06f14fca9d6a55965f4a27d43"
+  url "https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip"
+  sha256 "a6ea4f16ced9f2ce3a9b23d47c1cd0fee5a46ead9bd5f9ec76f8edfb7a153edc"
   head "https://github.com/phpmyadmin/phpmyadmin.git"
-
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "a4fc107a3300e748eb2935919e21b64bff5ba3d2b58c2d96f43a617de672a070" => :high_sierra
-    sha256 "a4fc107a3300e748eb2935919e21b64bff5ba3d2b58c2d96f43a617de672a070" => :sierra
-    sha256 "a4fc107a3300e748eb2935919e21b64bff5ba3d2b58c2d96f43a617de672a070" => :el_capitan
-  end
 
   depends_on PhpMetaRequirement
 
