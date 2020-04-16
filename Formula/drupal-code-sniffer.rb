@@ -3,9 +3,9 @@ require File.expand_path("../../Requirements/php-meta-requirement", __FILE__)
 class DrupalCodeSniffer < Formula
   desc "Checks Drupal code against coding standards"
   homepage "https://drupal.org/project/coder"
-  url "https://ftp.drupal.org/files/projects/coder-8.x-3.1.tar.gz"
-  version "8.x-3.1"
-  sha256 "409acb8b59bbcbc52f15d5c0885e09af28c313a2fb4e989185d02ffc3db24f08"
+  url "https://ftp.drupal.org/files/projects/coder-8.x-3.8.tar.gz"
+  version "8.x-3.8"
+  sha256 "145a9cc9a34dee3c8d0fb52a229979e2cd0eca362cd8f315ac02fbd6abf62264"
   head "http://git.drupal.org/project/coder.git", :branch => "8.x-3.x"
 
   option "without-drupalpractice-standard", "Don't install DrupalPractice standard"
