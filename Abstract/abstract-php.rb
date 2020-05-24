@@ -50,6 +50,10 @@ class AbstractPhp < Formula
 
     if name.split("::")[2].downcase.start_with?("php74")
       depends_on "krb5"
+      ENV["SASL_CFLAGS"] = "-I#{MacOS.sdk_path_if_needed}/usr/include/sasl"
+      ENV["SASL_LIBS"] = "-lsasl2"
+      ENV["EDIT_CFLAGS"] = " "
+      ENV["EDIT_LIBS"] = "-ledit"
     end
     # ssl
     if build.include?("with-homebrew-libressl")
