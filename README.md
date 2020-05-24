@@ -48,6 +48,7 @@ Bugs inevitably happen - none of us are running EVERY conceivable setup - but ho
 - File an awesome bug report, using the information in the next section.
 - If you have a failing install due to `GD build test failed`, try running the following before attempting to reinstall:
 - Mojave; XCode no longer installs needed headers, run `open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg`
+- PHP 7.4 Requires `krb5` and the `PKG_CONFIG_PATH` must be set correctly according to `krb5` install instructions
 
 ```sh
 brew rm freetype jpeg libpng gd zlib
