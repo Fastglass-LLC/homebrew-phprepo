@@ -47,7 +47,7 @@ class AbstractPhp < Formula
     depends_on "unixodbc" unless build.include?("without-unixodbc")
     depends_on "readline"
     depends_on "mysql" if build.include?("with-libmysql")
-    depends_on "krb5" => :optional if name.split("::")[2].downcase.start_with?("php72", "php73")
+    depends_on "krb5" => :require if name.split("::")[2].downcase.start_with?("php74")
 
     # ssl
     if build.include?("with-homebrew-libressl")
