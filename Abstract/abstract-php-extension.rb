@@ -196,7 +196,7 @@ class AbstractPhp73Extension < AbstractPhpExtension
 end
 
 class AbstractPhp74Extension < AbstractPhpExtension
-  include AbstractPhpVersion::Php73Defs
+  include AbstractPhpVersion::Php74Defs
 
   def self.init(opts = [])
     super()
