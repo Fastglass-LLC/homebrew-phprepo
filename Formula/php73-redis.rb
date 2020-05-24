@@ -9,7 +9,7 @@ class Php73Redis < AbstractPhp73Extension
   head "https://github.com/phpredis/phpredis.git"
 
 
-  depends_on "php72-igbinary"
+  depends_on "php73-igbinary"
   depends_on "igbinary" => :build
 
   def install
