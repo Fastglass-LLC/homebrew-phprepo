@@ -4,8 +4,8 @@ class Php73Xdebug < AbstractPhp73Extension
   init
   desc "Provides debugging and profiling capabilities."
   homepage "https://xdebug.org"
-  url "https://pecl.php.net/get/xdebug-2.9.5.tgz"
-  sha256 "775b1705109611b996d6a713fe14117a67846e157eb7dbf349bc0b055e861a10"
+  url "https://pecl.php.net/get/xdebug-2.9.6.tgz"
+  sha256 "ab03b6014706491b393aa8d520b5bdaf6735a2f1bc12a7772b2916ef2646e454"
   head "https://github.com/xdebug/xdebug.git"
 
 
