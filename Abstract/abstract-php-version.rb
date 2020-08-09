@@ -26,13 +26,13 @@ class AbstractPhpVersion < Formula
     }.freeze
   end
   module Php74Defs
-    PHP_SRC_TARBALL = "https://php.net/get/php-7.4.6.tar.bz2/from/this/mirror".freeze
+    PHP_SRC_TARBALL = "https://php.net/get/php-7.4.8.tar.bz2/from/this/mirror".freeze
     PHP_GITHUB_URL  = "https://github.com/php/php-src.git".freeze
-    PHP_VERSION     = "7.4.6".freeze
+    PHP_VERSION     = "7.4.8".freeze
     PHP_BRANCH      = "PHP-7.4".freeze
 
     PHP_CHECKSUM    = {
-        :sha256 => "a6ed9475695d2056322a3f2c00fee61a122a7fce138a0e25694320c5dd1d2348",
+        :sha256 => "6a48d3a605c003b088984ceb53be5df1e698b8b35ddacadd12fe50f49c0e8062",
     }.freeze
   end
 end
