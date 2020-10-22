@@ -13,10 +13,11 @@ class Php74Igbinary < AbstractPhp74Extension
   def install
     Dir.chdir "igbinary-#{version}" unless build.head?
     safe_phpize
-    system "./configure", "--prefix=#{prefix}", phpconfig
+    system "./configure", "--prefix=#{prefix} --enable-igbinary", phpconfig
     system "make"
     prefix.install "modules/igbinary.so"
     write_config_file if build.with? "config-file"
+    include.install Dir["src/*"]
   end
 
   def config_file
