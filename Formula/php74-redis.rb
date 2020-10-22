@@ -10,7 +10,6 @@ class Php74Redis < AbstractPhp74Extension
 
 
   depends_on "php74-igbinary"
-  depends_on "igbinary" => :build
 
   def install
     args = []
