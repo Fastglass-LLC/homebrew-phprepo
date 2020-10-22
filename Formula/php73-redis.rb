@@ -4,8 +4,8 @@ class Php73Redis < AbstractPhp73Extension
   init
   desc "PHP extension for Redis"
   homepage "https://github.com/phpredis/phpredis"
-  url "https://pecl.php.net/get/redis-5.3.0.tgz"
-  sha256 "cd532d9e0975fe0e584d823932890c0b8b4f8fdaffb7c453d74c4f3942d450a5"
+  url "https://pecl.php.net/get/redis-5.3.2.tgz"
+  sha256 "f4e92de628abcb917cdc810df045ca3fa0f2af34673eaa2a03350e3c5c5fdab1"
   head "https://github.com/phpredis/phpredis.git"
 
 
