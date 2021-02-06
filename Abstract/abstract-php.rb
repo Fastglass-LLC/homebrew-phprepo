@@ -31,32 +31,32 @@ class AbstractPhp < Formula
       conflicts_with php_formula_name, :because => "different php versions install the same binaries."
     end
 
-    depends_on "curl" if build.include?("with-homebrew-curl") || MacOS.version < :lion
+    depends_on "curl" if build.with?("with-homebrew-curl") || MacOS.version < :lion
     depends_on "enchant" => :optional
-    depends_on "freetds" if build.include?("with-mssql")
+    depends_on "freetds" if build.with?("with-mssql")
     depends_on "freetype"
     depends_on "gettext"
     depends_on "gmp" => :optional
     depends_on "icu4c"
-    depends_on "imap-uw" if build.include?("with-imap")
+    depends_on "imap-uw" if build.with?("with-imap")
     depends_on "jpeg"
     depends_on "webp" => :optional if name.split("::")[2].downcase.start_with?("php7")
     depends_on "libvpx" => :optional if name.split("::")[2].downcase.start_with?("php55", "php56")
     depends_on "libpng"
-    depends_on "libxml2" if build.include?("with-homebrew-libxml2") || MacOS.version < :lion || MacOS.version >= :el_capitan
-    depends_on "unixodbc" unless build.include?("without-unixodbc")
+    depends_on "libxml2" if build.with?("with-homebrew-libxml2") || MacOS.version < :lion || MacOS.version >= :el_capitan
+    depends_on "unixodbc" unless build.with?("without-unixodbc")
     depends_on "readline"
-    depends_on "mysql" if build.include?("with-libmysql")
+    depends_on "mysql" if build.with?("with-libmysql")
 
     # ssl
-    if build.include?("with-homebrew-libressl")
+    if build.with?("with-homebrew-libressl")
       depends_on "libressl"
     else
       depends_on "openssl"
     end
 
     #argon for 7.2
-    depends_on "argon2" => :optional if build.include?("with-argon2")
+    depends_on "argon2" => :optional if build.with?("with-argon2")
 
     # libsodium for 7.2
     depends_on "libsodium" => :recommended if name.split("::")[2].downcase.start_with?("php72")
@@ -66,7 +66,7 @@ class AbstractPhp < Formula
 
     # Sanity Checks
 
-    if build.include?("with-cgi") && build.include?("with-fpm")
+    if build.with?("with-cgi") && build.with?("with-fpm")
       raise "Cannot specify more than one CGI executable to build."
     end
 
@@ -240,7 +240,7 @@ INFO
       "--without-snmp",
     ]
 
-    if build.include?("with-homebrew-libxml2") || MacOS.version < :lion || MacOS.version >= :el_capitan
+    if build.with?("with-homebrew-libxml2") || MacOS.version < :lion || MacOS.version >= :el_capitan
       args << "--with-libxml-dir=#{Formula["libxml2"].opt_prefix}"
     end
 
@@ -283,7 +283,7 @@ INFO
       args << "--with-enchant=#{Formula["enchant"].opt_prefix}"
     end
 
-    if build.include?("with-homebrew-libressl")
+    if build.with?("with-homebrew-libressl")
       args << "--with-openssl=" + Formula["libressl"].opt_prefix.to_s
     else
       args << "--with-openssl=" + Formula["openssl"].opt_prefix.to_s
@@ -302,7 +302,7 @@ INFO
       args << "--enable-cgi"
     end
 
-    if build.include?("with-homebrew-curl") || MacOS.version < :lion
+    if build.with?("with-homebrew-curl") || MacOS.version < :lion
       args << "--with-curl=#{Formula["curl"].opt_prefix}"
     else
       args << "--with-curl"
@@ -535,7 +535,7 @@ INFO
         export PATH="$(brew --prefix homebrew/php/php#{php_version.delete(".")})/bin:$PATH"
     EOS
 
-    if build.include?("with-mcrypt")
+    if build.with?("with-mcrypt")
       s << <<~EOS
       ✩✩✩✩  Mcrypt ✩✩✩✩
 
@@ -545,7 +545,7 @@ INFO
     EOS
     end
 
-    if build.include?("enable-opcache")
+    if build.with?("enable-opcache")
       s << <<~EOS
       ✩✩✩✩ Opcache ✩✩✩✩
 
@@ -555,19 +555,19 @@ INFO
     EOS
     end
 
-    if build.include?("with-gmp")
+    if build.with?("with-gmp")
       s << <<~EOS
         GMP has moved to its own formula, please install it by running: brew install php#{php_version_path}-gmp
       EOS
     end
 
-    if build.include?("with-snmp")
+    if build.with?("with-snmp")
       s << <<~EOS
         SNMP has moved to its own formula, please install it by running: brew install php#{php_version_path}-snmp
       EOS
     end
 
-    if build.include?("with-tidy")
+    if build.with?("with-tidy")
       s << <<~EOS
         Tidy has moved to its own formula, please install it by running: brew install php#{php_version_path}-tidy
       EOS
