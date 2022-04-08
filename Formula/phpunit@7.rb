@@ -7,7 +7,6 @@ class PhpunitAT7 < AbstractPhpPhar
   url "https://phar.phpunit.de/phpunit-7.5.9.phar"
   sha256 "5404288061420c3921e53dd3a756bf044be546c825c5e3556dea4c51aa330f69"
 
-  bottle :unneeded
 
   def phar_file
     "phpunit-#{version}.phar"
