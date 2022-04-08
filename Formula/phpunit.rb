@@ -4,8 +4,8 @@ class Phpunit < AbstractPhpPhar
   init
   desc "Programmer-oriented testing framework for PHP"
   homepage "https://phpunit.de"
-  url "https://phar.phpunit.de/phpunit-9.1.1.phar"
-  sha256 "f753fa2e6ec4825f9b729073020f21f0a5150a2345012341154da4555c1b83bb"
+  url "https://phar.phpunit.de/phpunit-9.5.9.phar"
+  sha256 "0fed2c26d31dc9baf39bb22356f59aa640949ab3805343102207880f17b56d9c"
 
 
   def phar_file
